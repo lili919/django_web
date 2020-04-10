@@ -10,7 +10,8 @@ python manage.py startapp blog
 
 - 网站配置
 修改文件./lilisblog/settings.py的两处代码：
- INSTALLED_APPS = [
+``` python
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -19,11 +20,15 @@ python manage.py startapp blog
     'django.contrib.staticfiles',
     'blog',  # 新增
 ]
+```
+```python
 TIME_ZONE = 'Asia/Shanghai'  # 设置时区为东八区
+```
 
 # 编写博客的数据模型类
 
 - 编辑文件./blog/models.py
+```python
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
@@ -43,6 +48,7 @@ class BlogArticles(models.Model):
 
     def __str__(self):
         return self.title  # 对应后台文章列表中的默认显式字段
+```
 
 ForeignKey(外键)对应多对一，外键要定义在“多”的一方。本例通过author字段规定了文章与用户的关系，多篇文章可以对应一个用户，即文章对用户是"多对一"
 related_name="blog_posts"的作用是允许通过类User反向查询到BlogArticles，这个参数我们可以不设置，Django会默认以模型的小写作为反向关联名 。以后从User对象反向关联到他所写的BlogArticles，就可以使用user.blog_posts了
@@ -53,6 +59,7 @@ python manage.py makemigrations blog
 python manage.py migrate
 
 # 以超级用户身份进入博客后台
+
 - 创建超级用户（用户名：admin 密码：helloworld）
 python manage.py createsuperuser
 根据提示输入，例如：用户名admin 邮箱：lili919@yeah.net 密码：helloworld
@@ -65,16 +72,20 @@ python manage.py runserver
 
 - 在后台中显示BlogArticle栏目
 编辑文件./blog/admin.py
+```python
 from django.contrib import admin
 from .models import BlogArticles
 
 admin.site.register(BlogArticles)
+```
 
 # 发布博客
+
 - 点击上图中的“add”进入博客发布页面
 
 - 优化博客列表的显示
 修改./blog/admin.py优化博客列表的显示
+```python
 from django.contrib import admin
 from .models import BlogArticles
 
@@ -87,20 +98,25 @@ class BlogArticleAdmin (admin.ModelAdmin):
     ordering = ["publish", "author"]
 
 admin.site.register(BlogArticles, BlogArticleAdmin)
+```
 
 # 展示博客
+
 - 在前端展示博客列表
 编辑./blog/views.py
+```python
 from django.shortcuts import render
 from .models import BlogArticles
 
 def blog_list(request):
     blogs = BlogArticles.objects.all()
     return render(request, "blog/blog_list.html", {"blogs": blogs})
+```
 
 render()的作用是将数据渲染到指定的模板，第一个参数必须是request，第二个参数是模板的位置，第三个参数是要传递到模板的数据，这些数据是字典形式的。
 
 编辑./lilisblog/urls.py
+```python
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include
@@ -109,16 +125,20 @@ urlpatterns = [
     url(r'^', admin.site.urls),
     url(r'^', include('blog.urls')), #新增
 ]
+```
 
 新建 ./blog/urls.py 并编辑
+```python
 from django.shortcuts import render
 from .models import BlogArticles
 
 def blog_list(request):
     blogs = BlogArticles.objects.all()
     return render(request, "blog/blog_list.html", {"blogs":blogs})
+```
 
 新建 ./blog/templates/base.html 并编辑
+```html
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -139,10 +159,12 @@ def blog_list(request):
 
 </body>
 </html>
+```
 
 本例的 templates 目录是Django默认的存放本应用所需模板的目录，如果不用自定义的方式指定模板位置，Django会在运行时自动来这里查找render()函数中所指定的模板文件。
 
 新建 ./blog/templates/blog/blog_list.html 并编辑
+```html
 {% extends 'base.html" %}
 
 {% block title %} blog titles {% endlock %}
@@ -164,8 +186,69 @@ def blog_list(request):
         <img width="200px" src="https://mmbiz.qpic.cn/mmbiz_jpg/50ZAC2pjue1m3aXiccoFZRU1icIUCROtkRn5X9mpJRZicZr71gEuSdfrKCtlziawJ0icyWNM2YN49QYpJXuEC3ibVNZA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
     </div>
 </div>
+```
 
 重新运行Django（执行python manage.py runserver），浏览器输入http://127.0.0.1:8000/blog/
 
+- 在前端展示博客内容
+编辑./blog/views.py
+```python
+from django.shortcuts import render, get_object_or_404
+from .models import BlogArticles
+
+
+def blog_list(request):
+    blogs = BlogArticles.objects.all()
+    return render(request, "blog/blog_list.html", {"blogs": blogs})
+
+
+def blog_detail(request, article_id):
+    article = get_object_or_404(BlogArticles, id=article_id)
+    pub = article.publish
+    return render(request, "blog/blog_detail.html", {"article": article, "publish": pub})
+```
+
+编辑./blog/urls.py
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path(r'', views.blog_list, name='blog_list'),
+    path(r'<int:article_id>/', views.blog_detail, name='blog_detail'),
+]
+```
+
+新建 ./blog/templates/blog/blog_detail.html 并编辑
+```html
+{% extends "base.html" %}
+
+{% block title %} blog titles {% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middlw-sm">
+    <h1>{{article.title}}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center">
+            <span>{{article.author.username}}</span>
+            <span style="margin-left:20px">{{publish}}</span>
+        </p>
+        <div>
+            {{article.body}}
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+        <h2>广告</h2>
+        <p>跟涛哥学：www.taoge100.com/</p>
+        <img width="200px"
+             src="https://upload.jianshu.io/users/upload_avatars/2255795/899a3c03-80e5-4b18-9d64-cfda1f6de13b.png?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240">
+    </div>
+</div>
+{% endblock %}
+```
+
+重新运行Django（执行python manage.py runserver），浏览器输入http://127.0.0.1:8000/blog/ 并点击博客列表中的一篇
 
 

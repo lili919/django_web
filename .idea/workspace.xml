@@ -2,11 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b113b362-adb6-4eea-8c42-91c0deb3a07c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lilisblog/blog/templetes/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/blog/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lilisblog/blog/templetes/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/blog/templates/blog/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/django搭建博客网站02.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/imagecrop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/CSS/mansory-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/cropbox-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/csrf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/json2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/mp.mansory.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/static/js/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/app_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/auth/user/add_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/auth/user/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/base_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/change_form_object_tools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/change_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/change_list_object_tools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/change_list_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/date_hierarchy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/delete_confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/delete_selected_confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/edit_inline/stacked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/edit_inline/tabular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/includes/fieldset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/includes/object_delete_summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/invalid_setup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/object_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/popup_response.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/prepopulated_fields_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/related_widget_wrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/search_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/submit_line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/clearable_file_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/foreign_key_raw_id.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/many_to_many_raw_id.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/radio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/related_widget_wrapper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/split_datetime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/admin/widgets/url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/blog/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_change_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lilisblog/templates/registration/password_reset_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/django搭建博客网站01.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/django搭建博客网站01.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lilisblog/blog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lilisblog/blog/templates/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/templates/blog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lilisblog/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lilisblog/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lilisblog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lilisblog/lilisblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/lilisblog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lilisblog/lilisblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lilisblog/lilisblog/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,112 +99,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/manage.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/lilisblog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding>
-                <element signature="e#643#675#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/templates/blog/blog_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/lilisblog/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lilisblog/blog/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/lilisblog/blog/urls.py" />
-        <option value="$PROJECT_DIR$/lilisblog/blog/templetes/blog/blog_list.html" />
-        <option value="$PROJECT_DIR$/lilisblog/lilisblog/urls.py" />
-        <option value="$PROJECT_DIR$/lilisblog/lilisblog/settings.py" />
-        <option value="$PROJECT_DIR$/lilisblog/blog/templates/blog/blog_list.html" />
-      </list>
-    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -131,62 +119,22 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1948" />
-    <option name="y" value="367" />
-    <option name="width" value="784" />
-    <option name="height" value="832" />
+  <component name="ProjectId" id="1aIOrtdQOxngIwMhvBDwRhrbKp0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_web" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-              <item name="lilisblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lilisblog/templates" />
+      <recent name="$PROJECT_DIR$/lilisblog" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -213,99 +161,23 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1096" height="1896" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23345935" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.17203683" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lilisblog/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/lilisblog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/lilisblog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#643#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lilisblog/blog/templates/blog/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
